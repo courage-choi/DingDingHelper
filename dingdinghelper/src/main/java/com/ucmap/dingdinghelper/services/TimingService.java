@@ -141,6 +141,8 @@ public class TimingService extends Service {
                 initCheckInTime(null);
             }
             String t = (String) SPUtils.getString(Constants.AFTERNOON_CHECK_IN_TIME, "8:45");
+
+
         }
 
     }
@@ -251,7 +253,7 @@ public class TimingService extends Service {
 
     private void setTargetTimeForLockIn() {
         String time = "";
-        time = (String) SPUtils.getString(Constants.MORNING_CHECK_IN_TIME, "8:45");
+        time = (String) SPUtils.getString(Constants.MORNING_CHECK_IN_TIME, "6:45");
         int[] hm = parseTime(time);
         this.hour = hm[0];
         this.min = hm[1];

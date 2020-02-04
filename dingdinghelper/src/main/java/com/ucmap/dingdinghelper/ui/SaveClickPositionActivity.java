@@ -1,6 +1,5 @@
 package com.ucmap.dingdinghelper.ui;
 
-import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Point;
 import android.os.Bundle;
@@ -60,7 +59,6 @@ public class SaveClickPositionActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         save();
-                        setResult(RESULT_OK);
                         onBackPressed();
                         Toast.makeText(SaveClickPositionActivity.this, "保存坐标成功", Toast.LENGTH_LONG).show();
                         return;
